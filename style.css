@@ -1,8 +1,71 @@
-.head-img{
+.head-img {
     background-image: url(Assets/shopping-1761230_1280.jpg);
     background-position: right;
     background-size: cover;
 }
-.imgh{
-    height: 400px;
+
+.imgh {
+    height: 500px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 4fr 4fr 2fr;
+    grid-template-areas: "galeria1 galeria2"
+        "galeria1 galeria3"
+        "galeria1 galeria4";
+    height: 50vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px 10px 0 10px;
+    background-color: aqua;
+    
+}
+
+.galeria1 {
+    background-color: aqua;
+    grid-area: galeria1;
+    background-image: url(./Assets/picture-2008484_1280.png);
+}
+
+.galeria2 {
+    background-color: black;
+    grid-area: galeria2;
+    background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.galeria3 {
+    background-color: blueviolet;
+    grid-area: galeria3;
+    background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.galeria4 {
+    background-color: red;
+    grid-area: galeria4;
+    background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.ocupa {
+    background-size: cover;
+    background-position: center;
+    border: 2px solid yellow;
+}
+.aia{
+border-radius: 5px;
+height: 20px;
+width: 10px;
+}
+footer{
+    background-color: black;
+}
+.bi .bi-twitter-x{
+    color: white;
+}
+.bi .bi-instagram{
+    color: rgb(162, 5, 99) !important;
+}
+.bi .bi-facebook{
+    color: rgb(8, 8, 144);
 }
