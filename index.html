@@ -40,22 +40,69 @@
         </div>
     </nav>
     <!-- NavBar fin -->
-    <!-- Header inicia -->
-    <div class="container-fluid mt-3">
-        <div class="mt-4 p-5 bg-primary text-white rounded head-img">
-            <h1>Jumbotron Example</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat..</p>
-            <div class="d-flex justify-content-end">
-                <button type="button" class="btn bg-warning d-flex float-right btn-lg">Basic</button>
+    <!-- Barra de Info inicia -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner bg-info">
+            <div class="carousel-item active text-danger text-center">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+            <div class="carousel-item text-danger text-center">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+            <div class="carousel-item text-danger text-center">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
             </div>
         </div>
-        <!-- Header fin -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Barra de info fin -->
+    <!-- Carrousel novedades inicia -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Assets/picture-2008484_1280.png" class="d-block w-100 imgh" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/shopping-1761230_1280.jpg" class="d-block w-100 imgh" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/shopping-1761230_1280.jpg" class="d-block w-100 imgh" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carrousel novedades fin -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
