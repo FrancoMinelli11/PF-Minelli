@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .head-img {
     background-image: url(Assets/shopping-1761230_1280.jpg);
     background-position: right;
@@ -18,9 +23,7 @@
     height: 50vh;
     row-gap: 10px;
     column-gap: 10px;
-    padding: 10px 10px 0 10px;
-    background-color: aqua;
-    
+    padding: 10px 10px 10px 10px;
 }
 
 .galeria1 {
