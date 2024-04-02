@@ -53,22 +53,86 @@
 .ocupa {
     background-size: cover;
     background-position: center;
-    border: 2px solid yellow;
+    border: 2px solid #F3C3B2;
 }
-.aia{
-border-radius: 5px;
-height: 20px;
-width: 10px;
+.muestrash{
+    height: 700px;
+    margin: 0px 2px 0px 2px;
+}
+.muestrash1{
+    background-image: url(Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
+    border: #F3C3B2 solid 3px;
+}
+.muestrash2{
+    background-color: aquamarine;
+    border: #F3C3B2 3px;
+}
+.muestrash3{
+    background-image: url(Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
+    border: #F3C3B2 solid 3px;
+}
+.opciong{
+    display: grid;
+    grid-template-areas: "opcion1 opcion2"
+    "opcion3 opcion4"
+    "opcion5 opcion6";
+    gap: 2px;
+}
+.opcion{
+    height: 150px;
+    background-color: blue;
+    border: 3px solid #F3C3B2;
+}
+.opcion1{
+    grid-area: opcion1;
+}
+.opcion2{
+    grid-area: opcion2;
+}
+.opcion3{
+    grid-area: opcion3;
+}
+.opcion4{
+    grid-area: opcion4;
+}
+.opcion5{
+    grid-area: opcion5;
+}
+.opcion6{
+    grid-area: opcion6;
+}
+.barra-n{
+    background-color: #657166;
+    color: #CFD6C4;
 }
 footer{
-    background-color: black;
+    background-color: #657166;
+    color: #CFD6C4;
 }
-.bi .bi-twitter-x{
-    color: white;
+
+@media only screen and (max-width: 575px){
+    .fon3{
+        height: 350px;
+        width: 350px;
+    }
+    .fila-muestra{
+        row-gap: 10px;
+    }
 }
-.bi .bi-instagram{
-    color: rgb(162, 5, 99) !important;
-}
-.bi .bi-facebook{
-    color: rgb(8, 8, 144);
-}
+@media only screen and (min-width: 576px){
+    .opciong{
+        grid-template-areas: "opcion1 opcion2 opcion3"
+        "opcion4 opcion5 opcion6";
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .opcion{
+        background-color: yellow;
+        height: 250px;
+        width: 400px;
+    }
+    }
