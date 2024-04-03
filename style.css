@@ -15,9 +15,9 @@
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 4fr 4fr 2fr;
     grid-template-areas: "galeria1 galeria2"
+    "galeria1 galeria2"
+        "galeria1 galeria3"
         "galeria1 galeria3"
         "galeria1 galeria4";
     height: 50vh;
@@ -36,6 +36,7 @@
     background-color: black;
     grid-area: galeria2;
     background-image: url(./Assets/shopping-1761230_1280.jpg);
+
 }
 
 .galeria3 {
@@ -113,7 +114,12 @@ footer{
     background-color: #657166;
     color: #CFD6C4;
 }
-
+.imginfo{
+    background-image: url(./Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
+}
+/* MediaQuerys inicia */
 @media only screen and (max-width: 575px){
     .fon3{
         height: 350px;
@@ -135,4 +141,12 @@ footer{
         height: 250px;
         width: 400px;
     }
+    .galeria{
+        grid-template: "galeria1 galeria1 galeria2" 300px
+        "galeria1 galeria1 galeria3" 300px
+        "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
+        justify-content: center;
+        height: auto;
     }
+    }
+/* MediaQuerys fin */
