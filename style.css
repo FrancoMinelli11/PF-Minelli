@@ -59,22 +59,10 @@
 .muestrash{
     height: 700px;
     margin: 0px 2px 0px 2px;
-}
-.muestrash1{
-    background-image: url(Assets/picture-2008484_1280.png);
+    background-image: url(./Assets/picture-2008484_1280.png);
     background-position: center;
     background-size: cover;
-    border: #F3C3B2 solid 3px;
-}
-.muestrash2{
-    background-color: aquamarine;
-    border: #F3C3B2 3px;
-}
-.muestrash3{
-    background-image: url(Assets/picture-2008484_1280.png);
-    background-position: center;
-    background-size: cover;
-    border: #F3C3B2 solid 3px;
+    border: 3px solid #F3C3B2;
 }
 .opciong{
     display: grid;
@@ -87,6 +75,9 @@
     height: 150px;
     background-color: blue;
     border: 3px solid #F3C3B2;
+    background-image: url(./Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
 }
 .opcion1{
     grid-area: opcion1;
@@ -119,11 +110,35 @@ footer{
     background-position: center;
     background-size: cover;
 }
+.barra-n :hover{
+    color: #F3C3B2;
+}
+.bg-person{
+    background-color: #586d5a;
+    color: #CFD6C4;
+}
+.color-p{
+    color: #F3C3B2;
+}
+.rs{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 5px 0 5px;
+}
+.rs1 :hover{
+    color: black;
+}
+.rs2 :hover{
+    color: rgb(195, 13, 195);
+}
+.rs3 :hover{
+    color: blue;
+}
 /* MediaQuerys inicia */
 @media only screen and (max-width: 575px){
     .fon3{
-        height: 350px;
-        width: 350px;
+        height:350px;
+        width:350px;
     }
     .fila-muestra{
         row-gap: 10px;
@@ -137,7 +152,6 @@ footer{
         justify-content: space-between;
     }
     .opcion{
-        background-color: yellow;
         height: 250px;
         width: 400px;
     }
