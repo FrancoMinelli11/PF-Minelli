@@ -1,0 +1,25 @@
+$color1:#657166;
+$color2:#F3C3B2;
+$color3:#586d5a;
+@import "_galeria";
+@import "_reset";
+@import "_muestrasHombres";
+@import "_galeriaSexos";
+@import "_header";
+@import "_footer";
+@import "_mediaQuerys";
+.imgh {
+    height: 500px;
+}
+.imginfo{
+    background-image: url(./Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
+}
+.bg-person{
+    background-color: #586d5a;
+    color: #CFD6C4;
+}
+.color-p{
+    color:#F3C3B2;
+}

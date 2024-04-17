@@ -1,0 +1,33 @@
+.opciong{
+    display: grid;
+    grid-template-areas: "opcion1 opcion2"
+    "opcion3 opcion4"
+    "opcion5 opcion6";
+    gap: 2px;
+}
+.opcion{
+    height: 150px;
+    background-color: blue;
+    border: 3px solid $color2;
+    background-image: url(./Assets/picture-2008484_1280.png);
+    background-position: center;
+    background-size: cover;
+}
+.opcion1{
+    grid-area: opcion1;
+}
+.opcion2{
+    grid-area: opcion2;
+}
+.opcion3{
+    grid-area: opcion3;
+}
+.opcion4{
+    grid-area: opcion4;
+}
+.opcion5{
+    grid-area: opcion5;
+}
+.opcion6{
+    grid-area: opcion6;
+}

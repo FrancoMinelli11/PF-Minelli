@@ -1,0 +1,28 @@
+@media only screen and (max-width: 575px){
+    .fon3{
+        height:350px;
+        width:350px;
+    }
+    .fila-muestra{
+        row-gap: 10px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .opciong{
+        grid-template-areas: "opcion1 opcion2 opcion3"
+        "opcion4 opcion5 opcion6";
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .opcion{
+        height: 250px;
+        width: 400px;
+    }
+    .galeria{
+        grid-template: "galeria1 galeria1 galeria2" 300px
+        "galeria1 galeria1 galeria3" 300px
+        "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
+        justify-content: center;
+        height: auto;
+    }
+    }
