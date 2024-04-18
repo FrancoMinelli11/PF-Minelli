@@ -12,26 +12,22 @@
 }
 
 .galeria1 {
-    background-color: aqua;
     grid-area: galeria1;
     background-image: url(./Assets/picture-2008484_1280.png);
 }
 
 .galeria2 {
-    background-color: black;
     grid-area: galeria2;
     background-image: url(./Assets/shopping-1761230_1280.jpg);
 
 }
 
 .galeria3 {
-    background-color: blueviolet;
     grid-area: galeria3;
     background-image: url(./Assets/shopping-1761230_1280.jpg);
 }
 
 .galeria4 {
-    background-color: red;
     grid-area: galeria4;
     background-image: url(./Assets/shopping-1761230_1280.jpg);
 }
@@ -39,5 +35,5 @@
 .ocupa {
     background-size: cover;
     background-position: center;
-    border: 2px solid #F3C3B2;
+    border: 2px solid $color2;
 }

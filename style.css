@@ -1,94 +1,7 @@
-.galeria {
-  display: grid;
-  grid-template-areas: "galeria1 galeria2" "galeria1 galeria2" "galeria1 galeria3" "galeria1 galeria3" "galeria1 galeria4";
-  height: 50vh;
-  row-gap: 10px;
-  column-gap: 10px;
-  padding: 10px 10px 10px 10px;
-}
-
-.galeria1 {
-  background-color: aqua;
-  grid-area: galeria1;
-  background-image: url(./Assets/picture-2008484_1280.png);
-}
-
-.galeria2 {
-  background-color: black;
-  grid-area: galeria2;
-  background-image: url(./Assets/shopping-1761230_1280.jpg);
-}
-
-.galeria3 {
-  background-color: blueviolet;
-  grid-area: galeria3;
-  background-image: url(./Assets/shopping-1761230_1280.jpg);
-}
-
-.galeria4 {
-  background-color: red;
-  grid-area: galeria4;
-  background-image: url(./Assets/shopping-1761230_1280.jpg);
-}
-
-.ocupa {
-  background-size: cover;
-  background-position: center;
-  border: 2px solid #F3C3B2;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.muestrash {
-  height: 700px;
-  margin: 0px 2px 0px 2px;
-  background-image: url(./Assets/picture-2008484_1280.png);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid #F3C3B2;
-}
-
-.opciong {
-  display: grid;
-  grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
-  gap: 2px;
-}
-
-.opcion {
-  height: 150px;
-  background-color: blue;
-  border: 3px solid #F3C3B2;
-  background-image: url(./Assets/picture-2008484_1280.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.opcion1 {
-  grid-area: opcion1;
-}
-
-.opcion2 {
-  grid-area: opcion2;
-}
-
-.opcion3 {
-  grid-area: opcion3;
-}
-
-.opcion4 {
-  grid-area: opcion4;
-}
-
-.opcion5 {
-  grid-area: opcion5;
-}
-
-.opcion6 {
-  grid-area: opcion6;
 }
 
 .barra-n {
@@ -121,6 +34,88 @@ footer {
 
 .rs3 :hover {
   color: blue;
+}
+
+.galeria {
+  display: grid;
+  grid-template-areas: "galeria1 galeria2" "galeria1 galeria2" "galeria1 galeria3" "galeria1 galeria3" "galeria1 galeria4";
+  height: 50vh;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.galeria1 {
+  grid-area: galeria1;
+  background-image: url(./Assets/picture-2008484_1280.png);
+}
+
+.galeria2 {
+  grid-area: galeria2;
+  background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.galeria3 {
+  grid-area: galeria3;
+  background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.galeria4 {
+  grid-area: galeria4;
+  background-image: url(./Assets/shopping-1761230_1280.jpg);
+}
+
+.ocupa {
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #F3C3B2;
+}
+
+.muestrash {
+  height: 700px;
+  margin: 0px 2px 0px 2px;
+  background-image: url(./Assets/picture-2008484_1280.png);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #F3C3B2;
+}
+
+.opciong {
+  display: grid;
+  grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
+  gap: 2px;
+}
+
+.opcion {
+  height: 150px;
+  border: 3px solid #F3C3B2;
+  background-image: url(./Assets/picture-2008484_1280.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.opcion1 {
+  grid-area: opcion1;
+}
+
+.opcion2 {
+  grid-area: opcion2;
+}
+
+.opcion3 {
+  grid-area: opcion3;
+}
+
+.opcion4 {
+  grid-area: opcion4;
+}
+
+.opcion5 {
+  grid-area: opcion5;
+}
+
+.opcion6 {
+  grid-area: opcion6;
 }
 
 @media only screen and (max-width: 575px) {

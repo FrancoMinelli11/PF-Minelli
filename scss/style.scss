@@ -1,12 +1,12 @@
 $color1:#657166;
 $color2:#F3C3B2;
-$color3:#586d5a;
-@import "_galeria";
+$color3:#CFD6C4;
 @import "_reset";
-@import "_muestrasHombres";
-@import "_galeriaSexos";
 @import "_header";
 @import "_footer";
+@import "_galeria";
+@import "_muestrasHombres";
+@import "_galeriaSexos";
 @import "_mediaQuerys";
 .imgh {
     height: 500px;
