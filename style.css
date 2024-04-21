@@ -47,7 +47,7 @@ footer {
 
 .galeria1 {
   grid-area: galeria1;
-  background-image: url(./Assets/picture-2008484_1280.png);
+  background-image: url(./Assets/picture-2008484_1280.jpg);
 }
 
 .galeria2 {
@@ -74,7 +74,7 @@ footer {
 .muestrash {
   height: 700px;
   margin: 0px 2px 0px 2px;
-  background-image: url(./Assets/picture-2008484_1280.png);
+  background-image: url(./Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
@@ -89,7 +89,7 @@ footer {
 .opcion {
   height: 150px;
   border: 3px solid #F3C3B2;
-  background-image: url(./Assets/picture-2008484_1280.png);
+  background-image: url(./Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -148,7 +148,7 @@ footer {
 }
 
 .imginfo {
-  background-image: url(./Assets/picture-2008484_1280.png);
+  background-image: url(./Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
 }
