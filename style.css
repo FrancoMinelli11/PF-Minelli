@@ -159,9 +159,13 @@ footer {
 }
 
 .imginfo {
-  background-image: url(./Assets/picture-2008484_1280.jpg);
+  background-image: url(../Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.imginfo1 {
+  background-image: url(../Assets/WhatsApp\ Image\ 2024-04-24\ at\ 14.02.42.jpeg);
 }
 
 .bg-person {
