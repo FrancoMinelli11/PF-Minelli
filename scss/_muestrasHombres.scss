@@ -1,7 +1,13 @@
-.muestrash{
+.muestras-h{
     height: 700px;
-    margin: 0px 2px 0px 2px;
-    background-image: url(./Assets/picture-2008484_1280.jpg);
+    background-image: url(../Assets/Outfits\ Hombre.png);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid $color2;
+}
+.muestras-m{
+    height: 700px;
+    background-image: url(../Assets/Outfit\ mujer.png);
     background-position: center;
     background-size: cover;
     border: 3px solid $color2;

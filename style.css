@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* Fin Variables */
 * {
@@ -73,72 +74,87 @@ footer {
   border: 2px solid #F3C3B2;
 }
 
-.muestrash {
+.muestras-h {
   height: 700px;
-  margin: 0px 2px 0px 2px;
-  background-image: url(./Assets/picture-2008484_1280.jpg);
+  background-image: url(../Assets/Outfits\ Hombre.png);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
 }
 
-.opciong {
-  display: grid;
-  grid-template-areas: "opcion1 opcion2" "opcion3 opcion4" "opcion5 opcion6";
-  gap: 2px;
-}
-
-.opcion {
-  height: 150px;
-  border: 3px solid #F3C3B2;
-  background-image: url(./Assets/picture-2008484_1280.jpg);
+.muestras-m {
+  height: 700px;
+  background-image: url(../Assets/Outfit\ mujer.png);
   background-position: center;
   background-size: cover;
+  border: 3px solid #F3C3B2;
 }
 
-.opcion1 {
-  grid-area: opcion1;
+.hombres-look {
+  height: 400px;
+  width: 300px;
+  background-image: url(../Assets/picture-2008484_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  border: solid 3px #F3C3B2;
 }
 
-.opcion2 {
-  grid-area: opcion2;
+.mujeres-looks {
+  height: 400px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  border: solid 3px #F3C3B2;
 }
 
-.opcion3 {
-  grid-area: opcion3;
+.mujeres-looks1 {
+  background-image: url(../Assets/Remera\ Outfit.png);
 }
 
-.opcion4 {
-  grid-area: opcion4;
+.mujeres-looks2 {
+  background-image: url(../Assets/buzo\ mujer.png);
 }
 
-.opcion5 {
-  grid-area: opcion5;
+.mujeres-looks3 {
+  background-image: url(../Assets/remera2.png);
 }
 
-.opcion6 {
-  grid-area: opcion6;
+.mujeres-looks4 {
+  background-image: url(../Assets/buzo\ mujer\ 2.png);
+}
+
+.mujeres-looks5 {
+  background-image: url(../Assets/ornamental-cherry-8703849_1280.jpg);
+}
+
+.mujeres-looks6 {
+  background-image: url(../Assets/robin-8708068_1280.jpg);
+}
+
+.hombres-look1 {
+  background-image: url(../Assets/Buzo\ Hombre\ 1.png);
+  object-fit: cover;
+}
+
+.hombres-look2 {
+  background-image: url(../Assets/Buzo\ Hombre\ 2.png);
+}
+
+.hombres-look3 {
+  background-image: url(../Assets/Buzo\ Hombre\ 3.png);
+}
+
+.hombres-look4 {
+  background-image: url(../Assets/remera\ 3.png);
 }
 
 @media only screen and (max-width: 575px) {
-  .fon3 {
+  .tamaño-img-cel {
     height: 350px;
     width: 350px;
   }
-  .fila-muestra {
-    row-gap: 10px;
-  }
 }
-@media only screen and (min-width: 576px) {
-  .opciong {
-    grid-template-areas: "opcion1 opcion2 opcion3" "opcion4 opcion5 opcion6";
-    gap: 10px;
-    justify-content: space-between;
-  }
-  .opcion {
-    height: 250px;
-    width: 400px;
-  }
+@media only screen and (min-width: 1024px) {
   .galeria {
     grid-template: "galeria1 galeria1 galeria2" 300px "galeria1 galeria1 galeria3" 300px "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
     justify-content: center;
