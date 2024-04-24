@@ -76,7 +76,7 @@ footer {
 
 .muestras-h {
   height: 700px;
-  background-image: url(../Assets/Outfits\ Hombre.png);
+  background-image: url(../Assets/Outfits-hombre.png);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
@@ -84,7 +84,7 @@ footer {
 
 .muestras-m {
   height: 700px;
-  background-image: url(../Assets/Outfit\ mujer.png);
+  background-image: url(../Assets/Outfit-mujer.png);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
@@ -102,50 +102,43 @@ footer {
 .mujeres-looks {
   height: 400px;
   width: 300px;
+  background-image: url(../Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
   border: solid 3px #F3C3B2;
 }
 
 .mujeres-looks1 {
-  background-image: url(../Assets/Remera\ Outfit.png);
+  background-image: url(../Assets/remera-outfit.png);
 }
 
 .mujeres-looks2 {
-  background-image: url(../Assets/buzo\ mujer.png);
+  background-image: url(../Assets/buzo-mujer.png);
 }
 
 .mujeres-looks3 {
-  background-image: url(../Assets/remera2.png);
+  background-image: url(../Assets/remera-2.png);
 }
 
 .mujeres-looks4 {
-  background-image: url(../Assets/buzo\ mujer\ 2.png);
-}
-
-.mujeres-looks5 {
-  background-image: url(../Assets/ornamental-cherry-8703849_1280.jpg);
-}
-
-.mujeres-looks6 {
-  background-image: url(../Assets/robin-8708068_1280.jpg);
+  background-image: url(../Assets/buzo-mujer-2.png);
 }
 
 .hombres-look1 {
-  background-image: url(../Assets/Buzo\ Hombre\ 1.png);
+  background-image: url(../Assets/Buzo-hombre-1.png);
   object-fit: cover;
 }
 
 .hombres-look2 {
-  background-image: url(../Assets/Buzo\ Hombre\ 2.png);
+  background-image: url(../Assets/Buzo-hombre-2.png);
 }
 
 .hombres-look3 {
-  background-image: url(../Assets/Buzo\ Hombre\ 3.png);
+  background-image: url(../Assets/Buzo-hombre-3.png);
 }
 
 .hombres-look4 {
-  background-image: url(../Assets/remera\ 3.png);
+  background-image: url(../Assets/remera-3.png);
 }
 
 @media only screen and (max-width: 575px) {
