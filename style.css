@@ -76,7 +76,7 @@ footer {
 
 .muestras-h {
   height: 700px;
-  background-image: url(../Assets/Outfits-hombre.png);
+  background-image: url(Assets/Outfits-hombre.png);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
@@ -84,7 +84,7 @@ footer {
 
 .muestras-m {
   height: 700px;
-  background-image: url(../Assets/Outfit-mujer.png);
+  background-image: url(Assets/Outfit-mujer.png);
   background-position: center;
   background-size: cover;
   border: 3px solid #F3C3B2;
@@ -159,13 +159,13 @@ footer {
 }
 
 .imginfo {
-  background-image: url(/Assets/picture-2008484_1280.jpg);
+  background-image: url(Assets/picture-2008484_1280.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .imginfo1 {
-  background-image: url(../Assets/WhatsApp\ Image\ 2024-04-24\ at\ 14.02.42.jpeg);
+  background-image: url(Assets/WhatsApp\ Image\ 2024-04-24\ at\ 14.02.42.jpeg);
 }
 
 .bg-person {
