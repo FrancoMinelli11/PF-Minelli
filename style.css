@@ -138,7 +138,7 @@ footer {
 }
 
 .hombres-look4 {
-  background-image: url(Assets/remera-3.png);
+  background-image: url(../assets/outfit-mujer.png);
 }
 
 @media only screen and (max-width: 575px) {
