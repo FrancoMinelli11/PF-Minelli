@@ -83,15 +83,15 @@ footer {
 }
 
 .muestras-h1 {
-  background-image: url(../assets/577e4bfeb66e485d464bbe6a32e7f853.jpg);
+  background-image: url(Assets/577e4bfeb66e485d464bbe6a32e7f853.jpg);
 }
 
 .muestras-h2 {
-  background-image: url(../assets/ede384acb5531e14c0140afabed0d48d.jpg);
+  background-image: url(Assets/ede384acb5531e14c0140afabed0d48d.jpg);
 }
 
 .muestras-h3 {
-  background-image: url(../assets/9679576a341b6014faf17c8127875120.jpg);
+  background-image: url(Assets/9679576a341b6014faf17c8127875120.jpg);
 }
 
 .muestras-m {
@@ -150,7 +150,7 @@ footer {
 }
 
 .hombres-look4 {
-  background-image: url(assets/remera-outfit.png);
+  background-image: url(Assets/remera-outfit.png);
 }
 
 @media only screen and (max-width: 575px) {
