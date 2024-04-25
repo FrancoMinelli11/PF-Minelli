@@ -102,6 +102,18 @@ footer {
   border: 3px solid #F3C3B2;
 }
 
+.muestras-m1 {
+  background-image: url(Assets/18a488d04affddc4ddef2e139399da22.jpg);
+}
+
+.muestras-m2 {
+  background-image: url(Assets/bd2b0b3aa55df91690e04c5bd1cfc209.jpg);
+}
+
+.muestras-m3 {
+  background-image: url(/Assets/ccbccdf90b7ec75522c8982fc3f02d55.jpg);
+}
+
 .hombres-look {
   height: 400px;
   width: 300px;
@@ -158,6 +170,9 @@ footer {
     height: 350px;
     width: 350px;
   }
+  .muestras-m2, .muestras-m3 {
+    background-position: initial;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .galeria {
@@ -172,7 +187,22 @@ footer {
   }
 }
 .imgh {
-  height: 500px;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.imgh1 {
+  background-image: url(Assets/man-7061821_1280\ \(1\).jpg);
+}
+
+.imgh2 {
+  background-image: url(Assets/man-6790692_1280.jpg);
+}
+
+.imgh3 {
+  background-image: url(Assets/girl-5688101_1280.jpg);
 }
 
 .imginfo {

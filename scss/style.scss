@@ -11,7 +11,19 @@ $color3:#CFD6C4;
 @import "_galeriaSexos";
 @import "_mediaQuerys";
 .imgh {
-    height: 500px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.imgh1{
+    background-image: url(Assets/man-7061821_1280\ \(1\).jpg);
+}
+.imgh2{
+    background-image: url(Assets/man-6790692_1280.jpg);
+}
+.imgh3{
+    background-image: url(Assets/girl-5688101_1280.jpg);
 }
 .imginfo{
     background-image: url(Assets/picture-2008484_1280.jpg);
