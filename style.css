@@ -82,6 +82,18 @@ footer {
   border: 3px solid #F3C3B2;
 }
 
+.muestras-h1 {
+  background-image: url(../assets/577e4bfeb66e485d464bbe6a32e7f853.jpg);
+}
+
+.muestras-h2 {
+  background-image: url(../assets/ede384acb5531e14c0140afabed0d48d.jpg);
+}
+
+.muestras-h3 {
+  background-image: url(../assets/9679576a341b6014faf17c8127875120.jpg);
+}
+
 .muestras-m {
   height: 700px;
   background-image: url(Assets/Outfit-mujer.png);
@@ -138,7 +150,7 @@ footer {
 }
 
 .hombres-look4 {
-  background-image: url(../assets/outfit-mujer.png);
+  background-image: url(assets/remera-outfit.png);
 }
 
 @media only screen and (max-width: 575px) {
@@ -152,6 +164,11 @@ footer {
     grid-template: "galeria1 galeria1 galeria2" 300px "galeria1 galeria1 galeria3" 300px "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
     justify-content: center;
     height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .imgh1 {
+    object-fit: cover;
   }
 }
 .imgh {

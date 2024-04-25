@@ -13,3 +13,8 @@
         height: auto;
     }
     }
+    @media only screen and (max-width: 768px){
+        .imgh1{
+            object-fit: cover;
+        }
+    }
