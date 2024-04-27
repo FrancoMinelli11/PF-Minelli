@@ -3,13 +3,13 @@ $color1:#657166;
 $color2:#F3C3B2;
 $color3:#CFD6C4;
 /* Fin Variables */
-@import "_reset";
-@import "_header";
-@import "_footer";
-@import "_galeria";
-@import "_muestrasHombres";
-@import "_galeriaSexos";
-@import "_mediaQuerys";
+@import "./partials/reset";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/galeria";
+@import "./partials/galeriaSexos";
+@import "./partials/muestrasHombres";
+@import "./partials/mediaQuerys";
 .imgh {
     height: 700px;
     background-position: center;

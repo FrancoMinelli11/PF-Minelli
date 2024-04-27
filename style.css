@@ -74,46 +74,6 @@ footer {
   border: 2px solid #F3C3B2;
 }
 
-.muestras-h {
-  height: 700px;
-  background-image: url(Assets/Outfits-hombre.png);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid #F3C3B2;
-}
-
-.muestras-h1 {
-  background-image: url(Assets/577e4bfeb66e485d464bbe6a32e7f853.jpg);
-}
-
-.muestras-h2 {
-  background-image: url(Assets/ede384acb5531e14c0140afabed0d48d.jpg);
-}
-
-.muestras-h3 {
-  background-image: url(Assets/9679576a341b6014faf17c8127875120.jpg);
-}
-
-.muestras-m {
-  height: 700px;
-  background-image: url(Assets/Outfit-mujer.png);
-  background-position: center;
-  background-size: cover;
-  border: 3px solid #F3C3B2;
-}
-
-.muestras-m1 {
-  background-image: url(Assets/18a488d04affddc4ddef2e139399da22.jpg);
-}
-
-.muestras-m2 {
-  background-image: url(Assets/bd2b0b3aa55df91690e04c5bd1cfc209.jpg);
-}
-
-.muestras-m3 {
-  background-image: url(Assets/ccbccdf90b7ec75522c8982fc3f02d55.jpg);
-}
-
 .hombres-look {
   height: 400px;
   width: 300px;
@@ -163,6 +123,46 @@ footer {
 
 .hombres-look4 {
   background-image: url(Assets/remera-outfit.png);
+}
+
+.muestras-h {
+  height: 700px;
+  background-image: url(Assets/Outfits-hombre.png);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #F3C3B2;
+}
+
+.muestras-h1 {
+  background-image: url(Assets/577e4bfeb66e485d464bbe6a32e7f853.jpg);
+}
+
+.muestras-h2 {
+  background-image: url(Assets/ede384acb5531e14c0140afabed0d48d.jpg);
+}
+
+.muestras-h3 {
+  background-image: url(Assets/9679576a341b6014faf17c8127875120.jpg);
+}
+
+.muestras-m {
+  height: 700px;
+  background-image: url(Assets/Outfit-mujer.png);
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #F3C3B2;
+}
+
+.muestras-m1 {
+  background-image: url(Assets/18a488d04affddc4ddef2e139399da22.jpg);
+}
+
+.muestras-m2 {
+  background-image: url(Assets/bd2b0b3aa55df91690e04c5bd1cfc209.jpg);
+}
+
+.muestras-m3 {
+  background-image: url(Assets/ccbccdf90b7ec75522c8982fc3f02d55.jpg);
 }
 
 @media only screen and (max-width: 575px) {
