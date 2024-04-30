@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@0..45,79.8&family=Luckiest+Guy&display=swap');
 /* Variables */
+$font1: "Luckiest Guy", cursive;
 $color1: #657166;
 $color2:#F3C3B2;
 $color3:#CFD6C4;
@@ -32,6 +34,7 @@ $color3:#CFD6C4;
     font-size: 25px;
     color: $color2;
     border: solid 3px white;
+    text-shadow: black 3px 4px 5px;
 }
 .boton-nov{
     text-decoration: none;
