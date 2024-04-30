@@ -222,7 +222,7 @@ footer {
   left: 15%;
   font-size: 25px;
   color: #F3C3B2;
-  border: solid 3px white;
+  border: solid 3px rgb(189, 155, 155);
   text-shadow: black 3px 4px 5px;
 }
 
