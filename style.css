@@ -192,9 +192,11 @@ footer {
     object-fit: cover;
   }
 }
-@media only screen and (max-width: 956px) {
+@media only screen and (min-width: 956px) {
   .novedades {
-    width: 225px;
+    width: 717px !important;
+    font-size: 24px !important;
+    top: 66% !important;
   }
 }
 .imgh {
@@ -218,9 +220,9 @@ footer {
 
 .novedades {
   position: absolute;
-  top: 55%;
-  left: 15%;
-  font-size: 25px;
+  top: 70%;
+  width: 390px;
+  font-size: 18px;
   color: #F3C3B2;
   border: solid 3px rgb(189, 155, 155);
   text-shadow: black 3px 4px 5px;
@@ -229,7 +231,8 @@ footer {
 .boton-nov {
   text-decoration: none;
   color: #F3C3B2;
-  background-color: black;
+  border: 3px solid rgb(189, 155, 155);
+  border-radius: 0px;
 }
 
 .boton-nov:hover {

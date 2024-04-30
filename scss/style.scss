@@ -29,9 +29,9 @@ $color3:#CFD6C4;
 }
 .novedades{
     position: absolute;
-    top: 55%;
-    left: 15%;
-    font-size: 25px;
+    top: 70%;
+    width: 390px;
+    font-size: 18px;
     color: $color2;
     border: solid 3px rgb(189, 155, 155);
     text-shadow: black 3px 4px 5px;
@@ -39,7 +39,8 @@ $color3:#CFD6C4;
 .boton-nov{
     text-decoration: none;
     color: $color2;
-    background-color: black;
+    border: 3px solid rgb(189,155,155);
+    border-radius: 0px;
 }
 .boton-nov:hover{
     background-color: $color2;
