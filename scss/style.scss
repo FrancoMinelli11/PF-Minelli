@@ -1,5 +1,5 @@
 /* Variables */
-$color1:#657166;
+$color1: #657166;
 $color2:#F3C3B2;
 $color3:#CFD6C4;
 /* Fin Variables */
@@ -24,6 +24,23 @@ $color3:#CFD6C4;
 }
 .imgh3{
     background-image: url(Assets/girl-5688101_1280.jpg);
+}
+.novedades{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    font-size: 25px;
+    color: $color2;
+    border: solid 3px white;
+}
+.boton-nov{
+    text-decoration: none;
+    color: $color2;
+    background-color: black;
+}
+.boton-nov:hover{
+    background-color: $color2;
+    color: white;
 }
 .imginfo{
     background-image: url(Assets/picture-2008484_1280.jpg);
