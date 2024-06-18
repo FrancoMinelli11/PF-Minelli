@@ -199,6 +199,35 @@ footer {
     top: 66% !important;
   }
 }
+.style-label {
+  color: #657166;
+}
+
+.style-input {
+  border: solid 3px #F3C3B2;
+}
+
+.titulo-contacto {
+  color: #F3C3B2;
+}
+
+.texto-c {
+  color: #657166;
+}
+
+.boton-submit {
+  border: solid 3px #F3C3B2;
+  color: #657166;
+  background-color: white;
+  height: 50px;
+  width: 100px;
+}
+
+.boton-submit:hover {
+  color: #F3C3B2;
+  border-color: #657166;
+}
+
 .imgh {
   height: 700px;
   background-position: center;

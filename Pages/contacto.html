@@ -46,8 +46,8 @@
     <!-- NavBar fin -->
     <!-- Introducción Contacto inicia -->
     <main class="container-fluid my-3 p-3 text-center">
-        <p class="h1">¡CONTACTA CON NOSOTROS!</p>
-        <p class="p-3">
+        <p class="h1 titulo-contacto">¡CONTACTA CON NOSOTROS!</p>
+        <p class="p-3 texto-c">
             Queremos que nuestros clientes esten 100% conformes con el funcionamiento de nuestra página web
             y con la calidad de los productos que ofrecemos, por eso es que dejamos este apartado para que ustedes
             puedan comunicarse con nosotros, ante cualquier inquietud, problema o duda que tengan en su experiencia con nosotros, estamos
@@ -57,26 +57,25 @@
     <!-- Introducción Contacto fin -->
     <!-- Formulario inicia -->
     <form class="m-3 p-3">
-        <div class="mb-3">
-            <label for="name" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="name" placeholder="Introduce tu nombre" name="nombre">
+        <div class="form-floating mb-3 ">
+            <input type="text" class="form-control style-input" id="name" placeholder="Introduce tu nombre" name="nombre" required>
+            <label for="name" class="form-label style-label">Nombre:</label>
         </div>
-        <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido:</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Introduce tu apellido" name="apellido">
+        <div class="mb-3 form-floating">
+            <input type="text" class="form-control style-input" id="apellido" placeholder="Introduce tu apellido" name="apellido" required>
+            <label for="apellido" class="form-label style-label">Apellido:</label>
         </div>
-        <div class="mb-3 mt-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Introduce tu email" name="email" />
+        <div class="mb-3 mt-3 form-floating">
+            <input type="email" class="form-control style-input" id="email" placeholder="Introduce tu email" name="email" required>
+            <label for="email" class="form-label style-label">Email:</label>
         </div>
-        <div class="mb-3">
-            <label for="tel" class="form-label">Telefono:</label>
-            <input type="tel" class="form-control" id="tel" placeholder="Introduce tu telefono" name="tel" />
+        <div class="mb-3 form-floating">
+            <input type="tel" class="form-control style-input" id="tel" placeholder="Introduce tu telefono" name="telefono" required>
+            <label for="tel" class="form-label style-label">Teléfono:</label>
         </div>
-        <div class="mb-3">
-            <label for="provincia" class="form-label">Provincia:</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Selecciona tu provincia de residencia</option>
+        <div class="mb-3 form-floating">
+            <select class="form-select style-input" aria-label="Default select example" id="provincia" required>
+                <option disabled selected></option>
                 <option value="1">Buenos Aires</option>
                 <option value="2">Catamarca</option>
                 <option value="3">Chaco</option>
@@ -101,11 +100,13 @@
                 <option value="22">Tierra del Fuego</option>
                 <option value="23">Tucuman</option>
             </select>
+            <label for="provincia" class="form-label style-label">Provincia:</label>
         </div>
-        <div>
-            <label for="comment">Dejanos el motivo de tu contacto:</label>
-            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Escribe aquí..."></textarea>
+        <div class="form-floating mb-3">
+            <textarea class="form-control style-input" rows="5" id="comment" placeholder="Escribe aquí..." name="comentario"></textarea>
+            <label for="comment" class="style-label">Dejanos el motivo de tu contacto:</label>
         </div>
+        <button type="submit" class="boton-submit">Enviar</button>
     </form>
     <!-- Formulario fin -->
     <!-- Footer inicia -->
