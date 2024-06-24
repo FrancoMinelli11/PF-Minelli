@@ -5,133 +5,86 @@ function Compra(prenda, tipo, cantidad, medioPago, precio) {
     this.medioPago = medioPago;
     this.precio = precio;
     this.precioTotal = precio * cantidad;
-    }
-let elija;
-const BUZ = true;
-const MET = true;
+}
+
 let comprasArray = [];
-function venta(){
-do {
-    alert("Lista de precios: \n Pantalones = $20000 \n Buzos = $15000 \n Remeras = $10000")
-    let prenda = prompt("Elija que tipo de prenda desea comprar(Pantalón - Remera - Buzo - Nada)").toLowerCase().trim();
-    if (prenda == "buzo") {
-        let prendaN = prenda;
-        let cantidadP;
-        let medioPagoP;
-        let precioP;
-        let tipoP;
-        while(BUZ){
-        tipoP = prompt("Escriba que color de buzo le gustaría(Rojo - Azul - Verde)").toLowerCase().trim();
-        if (tipoP === "rojo" || tipoP === "azul" || tipoP === "verde") {
-            while (BUZ) {
-                cantidadP = Number(prompt("Escriba cuantos artículos le gustaría llevar(máximo 3)"))
-                if (isNaN(cantidadP) || cantidadP > 3 || cantidadP == "") {
-                    alert("Ingrese un número menor o igual 3")
-                }
-                else {
-                    while (MET) {
-                        medioPagoP = prompt("Escriba método de pago(Tarjeta - Efectivo - Transferencia)").toLowerCase().trim();
-                        if (medioPagoP == "tarjeta" || medioPagoP == "efectivo" || medioPagoP == "transferencia") {
-                            precioP = 15000
-                            break
-                        }
-                        else {
-                            alert("Ingrese un medio de pago válido")
-                        }
-                    }
-                    break
-                }
-            }
-            break
-        }
-        else{
-            alert("Ingrese uno de los colores indicados")
+
+function obtenerTipo(prenda) {
+    let opciones = {
+        buzo: ["rojo", "azul", "verde"],
+        pantalon: ["jean", "joggin", "cargo"],
+        remera: ["rojo", "azul", "verde"]
+    };
+
+    while (true) {
+        let tipo = prompt(`Escriba el color/tipo de ${prenda} que le gustaría (${opciones[prenda].join(" - ")})`).toLowerCase().trim();
+        if (opciones[prenda].includes(tipo)) {
+            return tipo;
+        } else {
+            alert("Ingrese una opción válida.");
         }
     }
-        comprasArray.push(new Compra(prendaN, tipoP, cantidadP, medioPagoP, precioP))
-    }
-    else if (prenda == "pantalon") {
-        let prendaN = prenda;
-        let cantidadP;
-        let medioPagoP;
-        let precioP;
-        let tipoP;
-        while(BUZ){
-            tipoP = prompt("Escriba que tipo de pantalón le gustaría(Jean - Joggin - Cargo)").toLowerCase().trim();
-        if (tipoP === "jean" || tipoP === "joggin" || tipoP === "cargo") {
-            while (BUZ) {
-                cantidadP = Number(prompt("Escriba cuantos artículos le gustaría llevar(máximo 3)"))
-                if (isNaN(cantidadP) || cantidadP > 3 || cantidadP == "") {
-                    alert("Ingrese un número menor o igual 3")
-                }
-                else {
-                    while (MET) {
-                        medioPagoP = prompt("Escriba método de pago(Tarjeta - Efectivo - Transferencia)").toLowerCase().trim();
-                        if (medioPagoP == "tarjeta" || medioPagoP == "efectivo" || medioPagoP == "transferencia") {
-                            precioP = 20000
-                            break
-                        }
-                        else {
-                            alert("Ingrese un medio de pago válido")
-                        }
-                    }
-                    break
-                }
-            }
-            break
-        }
-        else{
-            alert("Ingrese uno de los tipos indicados")
-        }
-    }
-        comprasArray.push(new Compra(prendaN, tipoP, cantidadP, medioPagoP, precioP))
-    }
-    else if (prenda == "remera") {
-        let prendaN = prenda;
-        let cantidadP;
-        let medioPagoP;
-        let precioP;
-        let tipoP;
-        while(BUZ){
-        tipoP = prompt("Escriba color de remera que le gustaría(Rojo - Azul - Verde)").toLowerCase().trim();
-        if (tipoP === "rojo" || tipoP === "azul" || tipoP === "verde") {
-            while (BUZ) {
-                cantidadP = Number(prompt("Escriba cuantos artículos le gustaría llevar(máximo 3)"))
-                if (isNaN(cantidadP) || cantidadP > 3 || cantidadP == "") {
-                    alert("Ingrese un número menor o igual 3")
-                }
-                else {
-                    while (MET) {
-                        medioPagoP = prompt("Escriba método de pago(Tarjeta - Efectivo - Transferencia)").toLowerCase().trim();
-                        if (medioPagoP == "tarjeta" || medioPagoP == "efectivo" || medioPagoP == "transferencia") {
-                            precioP = 10000
-                            break
-                        }
-                        else {
-                            alert("Ingrese un medio de pago válido")
-                        }
-                    }
-                    break
-                }
-            }
-            break
-        }
-        else{
-            alert("Ingrese uno de los colores indicados")
-        }
-    }
-        comprasArray.push(new Compra(prendaN, tipoP, cantidadP, medioPagoP, precioP))
-    }
-    elija = confirm("¿Desea agregar algo más?")
-} while (elija)
 }
-venta()
-suma = 0;
-for (let productos of comprasArray) {
-    alert(`Usted lleva ${productos.cantidad} unidades de ${productos.prenda} ${productos.tipo} y pagará mediante ${productos.medioPago}`)
-    alert(`Precio final = $${productos.precioTotal}`)
+
+function obtenerCantidad() {
+    while (true) {
+        let cantidad = Number(prompt("Escriba cuantos artículos le gustaría llevar (máximo 3)"));
+        if (!isNaN(cantidad) && cantidad > 0 && cantidad <= 3) {
+            return cantidad;
+        } else {
+            alert("Ingrese un número válido menor o igual a 3.");
+        }
+    }
 }
-comprasArray.forEach(function(productoTotal){
-    suma += productoTotal.precioTotal;
-})
-alert(`El total a pagar es de $${suma}`)
+
+function obtenerMedioPago() {
+    let medios = ["tarjeta", "efectivo", "transferencia"];
+    while (true) {
+        let medio = prompt("Escriba método de pago (Tarjeta - Efectivo - Transferencia)").toLowerCase().trim();
+        if (medios.includes(medio)) {
+            return medio;
+        } else {
+            alert("Ingrese un medio de pago válido.");
+        }
+    }
+}
+
+function realizarCompra() {
+    let precios = { pantalon: 20000, buzo: 15000, remera: 10000 };
+    let continuarCompra;
+
+    do {
+        alert("Lista de precios:\nPantalones = $20000\nBuzos = $15000\nRemeras = $10000");
+        let prenda = prompt("Elija que tipo de prenda desea comprar (Pantalón - Remera - Buzo - Nada)").toLowerCase().trim();
+
+        if (prenda === "nada") break;
+
+        if (prenda in precios) {
+            let tipo = obtenerTipo(prenda);
+            let cantidad = obtenerCantidad();
+            let medioPago = obtenerMedioPago();
+            let precio = precios[prenda];
+
+            comprasArray.push(new Compra(prenda, tipo, cantidad, medioPago, precio));
+        } else {
+            alert("Ingrese una prenda válida.");
+        }
+
+        continuarCompra = confirm("¿Desea agregar algo más?");
+    } while (continuarCompra);
+}
+
+function mostrarResumenCompras() {
+    let sumaTotal = 0;
+
+    for (let compra of comprasArray) {
+        alert(`Usted lleva ${compra.cantidad} unidades de ${compra.prenda} ${compra.tipo} y pagará mediante ${compra.medioPago}`);
+        alert(`Precio final = $${compra.precioTotal}`);
+        sumaTotal += compra.precioTotal;
+    }
+
+    alert(`El total a pagar es de $${sumaTotal}`);
+}
+
+// let boton = document.getElementById("rojos")
+// boton.addEventListener('click',realizarCompra)

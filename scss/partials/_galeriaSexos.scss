@@ -1,41 +1,13 @@
-.hombres-look{
-    height: 400px;
-    width: 300px;
-    background-image: url(Assets/picture-2008484_1280.jpg);
-    background-position: center;
-    background-size: cover;
+.card-look{
     border: solid 3px $color2;
 }
-.mujeres-looks{
-    height: 400px;
-    width: 300px;
-    background-image: url(Assets/picture-2008484_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    border: solid 3px $color2;
+.btn-look{
+    color: $color2;
+    background-color: $color1;
+    border: 2px solid $color2;
 }
-.mujeres-looks1{
-    background-image: url(Assets/remera-outfit.png);
-}
-.mujeres-looks2{
-    background-image: url(Assets/buzo-mujer.png);
-}
-.mujeres-looks3{
-    background-image: url(Assets/remera-2.png);
-}
-.mujeres-looks4{
-    background-image: url(Assets/buzo-mujer-2.png);
-}
-.hombres-look1{
-    background-image: url(Assets/Buzo-hombre-1.png);
-    object-fit: cover;
-}
-.hombres-look2{
-    background-image: url(Assets/Buzo-hombre-2.png);
-}
-.hombres-look3{
-    background-image: url(Assets/Buzo-hombre-3.png);
-}
-.hombres-look4{
-    background-image: url(Assets/remera-outfit.png);
+.btn-look:hover{
+    color: $color1;
+    background-color: $color2;
+    border-color: $color1;
 }
