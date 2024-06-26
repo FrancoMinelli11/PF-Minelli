@@ -78,6 +78,7 @@ footer {
 
 .card-look {
   border: solid 3px #F3C3B2;
+  width: 18rem;
 }
 
 .btn-look {
@@ -184,8 +185,6 @@ footer {
   border: solid 3px #F3C3B2;
   color: #657166;
   background-color: white;
-  height: 50px;
-  width: 100px;
 }
 
 .boton-submit:hover {

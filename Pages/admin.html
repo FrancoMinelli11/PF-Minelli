@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="shortcut icon" href="../Assets/apachehadoop.svg" type="image/x-icon">
+    <title>KayFs Oficial - Administradores</title>
+</head>
+<body>
+        <!-- NavBar inicia -->
+        <nav class="navbar navbar-expand-sm navbar-dark barra-n sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">KayFs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link barra-n" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barra-n" href="./hombres.html">Hombres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barra-n" href="./mujeres.html">Mujeres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barra-n" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link barra-n" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NavBar fin -->
+        <h1 class="h1 text-center my-2 texto-color">KayFs - Página de administradores</h1>
+        <main class="container-fluid">
+            <p class="text-body-secondary text-center">Esta página está diseñada para agregar productos a la web, proximamente se añadiran más funciones</p>
+        </main>
+        <form class="m-3 p-3">
+            <div class="form-floating mb-3 ">
+                <input type="text" class="form-control style-input" id="nombre-producto" placeholder="Introducir nombre del producto" name="nombre-producto" required>
+                <label for="nombre-producto" class="form-label style-label">Producto:</label>
+            </div>
+            <div class="form-floating mb-3 ">
+                <input type="text" class="form-control style-input" id="url-producto" placeholder="Introducir URL de la imagen del producto" name="url-producto" required>
+                <label for="url-producto" class="form-label style-label">URL de imagen:</label>
+            </div>
+            <div class="form-floating mb-3 ">
+                <input type="number" class="form-control style-input" id="precio-producto" placeholder="Introducir el precio del producto" name="precio-producto" required>
+                <label for="precio-producto" class="form-label style-label">Precio:</label>
+            </div>
+            <div class="form-floating mb-3 ">
+                <input type="text" class="form-control style-input" id="descripcion-producto" placeholder="Introducir descripción del producto" name="descripcion-producto" required>
+                <label for="descripcion-producto" class="form-label style-label">Descripción:</label>
+            </div>
+            <button class="boton-submit p-2" id="crear-producto">Crear producto</button>
+        </form>
+        <div id="aver">
+        </div>
+            <!-- Footer inicia -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">© 2024 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3">
+            <li class="ms-3">
+                <a class="text-body-secondary rs1" href="#"><i class="bi bi-twitter-x rs"></i></a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary rs2" href="#"><i class="bi bi-instagram rs"></i></a>
+            </li>
+            <li class="ms-3">
+                <div width="16" height="16" viewbox="0 0 16 16">
+                    <a class="text-body-secondary rs3" href="#"><i class="bi bi-facebook rs"></i></a>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <!-- Footer fin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="../js/index.js"></script>
+</body>
+</html>
