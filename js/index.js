@@ -92,6 +92,7 @@ const INPUT_NAME = document.getElementById('nombre-producto');
 const INPUT_URL = document.getElementById('url-producto');
 const INPUT_PRECIO = document.getElementById('precio-producto');
 const INPUT_DESCRIPCION = document.getElementById('descripcion-producto');
+const PAGINA_CREAR = document.getElementById('pagina-crear')
 const BTN_CREAR = document.getElementById('crear-producto');
 
 // Función para crear producto
@@ -101,6 +102,7 @@ function agregarProducto(evento) {
     const URL = INPUT_URL.value;
     const PRECIO = INPUT_PRECIO.value;
     const DESCRIPCION = INPUT_DESCRIPCION.value;
+    const PAG = PAGINA_CREAR.value;
 
     if (NOMBRE && URL && PRECIO && DESCRIPCION) {
         const PRODUCTO = {
@@ -112,16 +114,17 @@ function agregarProducto(evento) {
 
 
         // Guardar producto en localStorage
-        let productos = JSON.parse(localStorage.getItem('productos')) || [];
+        let productos = JSON.parse(localStorage.getItem(PAG)) || [];
         productos.push(PRODUCTO);
-        localStorage.setItem('productos', JSON.stringify(productos));
+        localStorage.setItem(PAG, JSON.stringify(productos));
 
         INPUT_NAME.value = '';
         INPUT_URL.value = '';
         INPUT_PRECIO.value = '';
         INPUT_DESCRIPCION.value = '';
+        PAGINA_CREAR.value = '';
 
-        window.location.href = 'hombres.html';
+        window.location.href = PAG;
     } else {
         alert("Valores inválidos");
     }

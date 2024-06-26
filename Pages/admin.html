@@ -62,6 +62,14 @@
                 <input type="text" class="form-control style-input" id="descripcion-producto" placeholder="Introducir descripción del producto" name="descripcion-producto" required>
                 <label for="descripcion-producto" class="form-label style-label">Descripción:</label>
             </div>
+            <div class="mb-3 form-floating">
+                <select class="form-select style-input" id="pagina-crear" aria-label="Default select example" id="pagina" required>
+                    <option disabled selected></option>
+                    <option value="hombres.html">Hombres</option>
+                    <option value="mujeres.html">Mujeres</option>
+                </select>
+                <label for="provincia" class="form-label style-label">Seleccionar en que página agregar:</label>
+            </div>
             <button class="boton-submit p-2" id="crear-producto">Crear producto</button>
         </form>
         <div id="aver">
@@ -90,5 +98,6 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
         <script src="../js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
