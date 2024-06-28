@@ -13,6 +13,7 @@ $color3:#CFD6C4;
 @import "./partials/muestrasHombres";
 @import "./partials/mediaQuerys";
 @import "./partials/contacto";
+@import "./partials/sweetAlert";
 .imgh {
     height: 700px;
     background-position: center;
@@ -71,4 +72,9 @@ $color3:#CFD6C4;
 *::-webkit-scrollbar-thumb{
     background-color:$color2;
     border: 2px solid $color1;
+}
+.boton-img-h{
+    height: 3.625rem;
+    padding: 1px;
+    background-color: white;
 }

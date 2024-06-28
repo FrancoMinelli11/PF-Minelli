@@ -94,6 +94,39 @@ const INPUT_PRECIO = document.getElementById('precio-producto');
 const INPUT_DESCRIPCION = document.getElementById('descripcion-producto');
 const PAGINA_CREAR = document.getElementById('pagina-crear')
 const BTN_CREAR = document.getElementById('crear-producto');
+const BTN_SELECCIONAR_IMAGEN = document.getElementById('seleccionar-imagen');
+
+// Función para manejar la selección de imagen
+BTN_SELECCIONAR_IMAGEN.addEventListener('click', async () => {
+    const { value: file } = await Swal.fire({
+        title: "Seleccionar imagen",
+        input: "file",
+        inputAttributes: {
+            "accept": "image/*",
+            "aria-label": "Carga la imagen del producto"
+        },
+        buttonsStyling: false,
+        customClass:{
+            popup: 'popup',
+            confirmButton: 'boton-popup'
+        },
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        confirmButtonText: 'Cargar',
+    });
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            Swal.fire({
+                title: "Esta es la imagen cargada",
+                imageUrl: e.target.result,
+                imageAlt: "The uploaded picture"
+            });
+            INPUT_URL.value = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
 
 // Función para crear producto
 function agregarProducto(evento) {
@@ -131,3 +164,4 @@ function agregarProducto(evento) {
 }
 
 BTN_CREAR.addEventListener('click', agregarProducto);
+

@@ -1,0 +1,16 @@
+.popup{
+    color: $color2;
+    border: .125rem solid $color2;
+}
+.boton-popup{
+    color: $color1;
+    background-color: $color2;
+    border: .125rem solid $color2;
+    padding: .125rem;
+    border-radius: .3125rem;
+}
+.boton-popup:hover{
+    color: $color2;
+    border-color: $color1;
+    background-color: $color1;
+}

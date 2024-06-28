@@ -192,6 +192,25 @@ footer {
   border-color: #657166;
 }
 
+.popup {
+  color: #F3C3B2;
+  border: 0.125rem solid #F3C3B2;
+}
+
+.boton-popup {
+  color: #657166;
+  background-color: #F3C3B2;
+  border: 0.125rem solid #F3C3B2;
+  padding: 0.125rem;
+  border-radius: 0.3125rem;
+}
+
+.boton-popup:hover {
+  color: #F3C3B2;
+  border-color: #657166;
+  background-color: #657166;
+}
+
 .imgh {
   height: 700px;
   background-position: center;
@@ -263,6 +282,12 @@ footer {
 *::-webkit-scrollbar-thumb {
   background-color: #F3C3B2;
   border: 2px solid #657166;
+}
+
+.boton-img-h {
+  height: 3.625rem;
+  padding: 1px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
