@@ -1,0 +1,20 @@
+.main-inicio-sesion{
+    background-color: $color3;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-inicio-sesion{
+    // align-items: center;
+    align-content: center;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    border: .3125rem solid $color2;
+    border-radius: .4375rem;
+}
+.h1-registro{
+    font-size: large;
+}

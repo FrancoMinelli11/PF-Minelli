@@ -192,23 +192,52 @@ footer {
   border-color: #657166;
 }
 
+#comment {
+  resize: none;
+  height: 6.25rem;
+}
+
 .popup {
   color: #F3C3B2;
   border: 0.125rem solid #F3C3B2;
 }
 
 .boton-popup {
-  color: #657166;
-  background-color: #F3C3B2;
+  all: unset;
+  color: #F3C3B2;
   border: 0.125rem solid #F3C3B2;
-  padding: 0.125rem;
+  padding: 0.25rem;
   border-radius: 0.3125rem;
+  margin-bottom: 0.125rem;
+  width: 12.5rem;
 }
 
 .boton-popup:hover {
-  color: #F3C3B2;
-  border-color: #657166;
-  background-color: #657166;
+  color: white;
+  border-color: white;
+  background-color: #F3C3B2;
+}
+
+.main-inicio-sesion {
+  background-color: #CFD6C4;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-inicio-sesion {
+  align-content: center;
+  height: 50vh;
+  width: 50vw;
+  background-color: white;
+  border: 0.3125rem solid #F3C3B2;
+  border-radius: 0.4375rem;
+}
+
+.h1-registro {
+  font-size: large;
 }
 
 .imgh {
