@@ -1,9 +1,14 @@
 //Llamado de Contenedor para CARDS
+
 const DIV_HOMBRES = document.getElementById('div-hombres-prendas');
 
 // Función para agregar productos al DOM
+
 function renderizarProductos() {
+    //Traer productos del localStorage
     const productos = JSON.parse(localStorage.getItem('hombres.html')) || [];
+
+    //Crear el producto en HTML
     productos.forEach(producto => {
         const CARD = document.createElement('div');
         CARD.className = 'card card-look';

@@ -88,6 +88,7 @@
 
 
 // Llamado de elementos de HTML
+
 const INPUT_NAME = document.getElementById('nombre-producto');
 const INPUT_URL = document.getElementById('url-producto');
 const INPUT_PRECIO = document.getElementById('precio-producto');
@@ -97,6 +98,7 @@ const BTN_CREAR = document.getElementById('crear-producto');
 const BTN_SELECCIONAR_IMAGEN = document.getElementById('seleccionar-imagen');
 
 // Función para manejar la selección de imagen
+
 BTN_SELECCIONAR_IMAGEN.addEventListener('click', async () => {
     const { value: file } = await Swal.fire({
         title: "Seleccionar imagen",
@@ -129,6 +131,7 @@ BTN_SELECCIONAR_IMAGEN.addEventListener('click', async () => {
 });
 
 // Función para crear producto
+
 function agregarProducto(evento) {
     evento.preventDefault();
     const NOMBRE = INPUT_NAME.value;
@@ -147,17 +150,21 @@ function agregarProducto(evento) {
 
 
         // Guardar producto en localStorage
+
         let productos = JSON.parse(localStorage.getItem(PAG)) || [];
         productos.push(PRODUCTO);
         localStorage.setItem(PAG, JSON.stringify(productos));
 
+        //Reiniciar inputs
         INPUT_NAME.value = '';
         INPUT_URL.value = '';
         INPUT_PRECIO.value = '';
         INPUT_DESCRIPCION.value = '';
         PAGINA_CREAR.value = '';
 
+        //Redirigir a la página elegida
         window.location.href = PAG;
+
     } else {
         alert("Valores inválidos");
     }
