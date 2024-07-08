@@ -18,3 +18,8 @@
 .h1-registro{
     font-size: large;
 }
+
+input#user-name:focus, input#password:focus{
+    border: .125rem solid $color3;
+    box-shadow: none;
+}
