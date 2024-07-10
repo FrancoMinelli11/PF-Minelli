@@ -23,7 +23,7 @@ function renderizarProductos() {
             const CARD_H = document.createElement('div');
             CARD_H.className = 'card card-look';
             CARD_H.innerHTML = `
-            <img src="${arti.foto}" class="card-img-top" alt="...">
+            <img src="${arti.foto}" class="card-img-top" alt="Prenda super épica by KayFs">
             <div class="card-body">
             <h5 class="card-title">${arti.nombre}</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">$${arti.precio}</h6>
