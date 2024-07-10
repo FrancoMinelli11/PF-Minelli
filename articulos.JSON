@@ -1,0 +1,55 @@
+{
+    "hombres":[
+        {
+            "nombre":"Buzo Beyond",
+            "foto": "../Assets/buzo-hombre-1.png",
+            "precio": 14000,
+            "descripcion":"Buzo ultra épico papus"
+        },
+        {
+            "nombre":"Remera W-Wings",
+            "foto": "../Assets/remera-3.png",
+            "precio": 14000,
+            "descripcion":"Remera suuper top"
+        },
+        {
+            "nombre":"Buzo Freestyle",
+            "foto": "../Assets/buzo-hombre-3.png",
+            "precio": 14000,
+            "descripcion":"Buzinii suuper top"
+        },
+        {
+            "nombre":"Remera Wings",
+            "foto": "../Assets/remera-outfit.png",
+            "precio": 14000,
+            "descripcion":"Remera good"
+        }
+    ],
+    "mujeres":[
+        {
+            "nombre":"Buzo Beyond-W",
+            "foto": "../Assets/buzo-mujer.png",
+            "precio": 14000,
+            "descripcion":"Buzo ultra épico papus"
+        },
+        {
+            "nombre":"Buzo Monocromic",
+            "foto": "../Assets/buzo-mujer-2.png",
+            "precio": 14000,
+            "descripcion":"Remera suuper top"
+        },
+        {
+            "nombre":"Remera Wings",
+            "foto": "../Assets/remera-outfit.png",
+            "precio": 14000,
+            "descripcion":"Remera good"
+        },
+        {
+            "nombre":"Remera Purplestic",
+            "foto": "../Assets/remera-2.png",
+            "precio": 14000,
+            "descripcion":"Buzinii suuper top"
+        }
+    ]
+}
+
