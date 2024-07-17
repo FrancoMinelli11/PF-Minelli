@@ -1,0 +1,30 @@
+.img-articulo{
+    height: 6.25rem;
+    width: 6.25rem;
+    min-height: 6.25rem;
+    min-width: 6.25rem;
+    border: .125rem solid $color2;
+}
+.div-carrito{
+    width: 100%;
+    padding: .3125rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .3125rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.info-carrito{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.precio-carrito{
+    font-size: 1.4375rem;
+    opacity: 0.5;
+}
+#total-carrito{
+    margin: .3125rem;
+    padding: .3125rem;
+}

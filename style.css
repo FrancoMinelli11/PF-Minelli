@@ -1,11 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@0..45,79.8&family=Luckiest+Guy&display=swap");
+@font-face {
+  font-family: "Keila";
+  src: url(../Photographs.ttf) format(trueType);
+}
 /* Variables */
 /* Fin Variables */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Keila";
 }
 
 .barra-n {
@@ -135,6 +140,10 @@ footer {
   color: #F3C3B2;
 }
 
+.comprar-btn {
+  letter-spacing: 2.5px;
+}
+
 .style-label {
   color: #657166;
 }
@@ -213,6 +222,41 @@ footer {
 input#user-name:focus, input#password:focus {
   border: 0.125rem solid #CFD6C4;
   box-shadow: none;
+}
+
+.img-articulo {
+  height: 6.25rem;
+  width: 6.25rem;
+  min-height: 6.25rem;
+  min-width: 6.25rem;
+  border: 0.125rem solid #F3C3B2;
+}
+
+.div-carrito {
+  width: 100%;
+  padding: 0.3125rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.3125rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.info-carrito {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.precio-carrito {
+  font-size: 1.4375rem;
+  opacity: 0.5;
+}
+
+#total-carrito {
+  margin: 0.3125rem;
+  padding: 0.3125rem;
 }
 
 @media only screen and (max-width: 575px) {
