@@ -16,7 +16,7 @@ function carro() {
             <div class="info-carrito">
                 <h2 class="h2">${tuki.nombre}</h2>
                 <h3 class="precio-carrito">$${tuki.precio}</h3>
-                <button class="btn-eliminar btn btn-look" data-index="${index}">Eliminar</button>
+                <button class="btn-eliminar btn btn-look" data-index="${index}"><i class="bi bi-trash3-fill"></i></button>
             </div>
         </div>`;
         cero += Number(tuki.precio);
