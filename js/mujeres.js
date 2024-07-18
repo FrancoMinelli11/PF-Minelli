@@ -24,6 +24,18 @@ function renderizarProductos() {
     function cargarArti (datos){
         const ARTICULOS_CARRITO_MUJERES = [...datos.mujeres, ...productos]
         ARTICULOS_CARRITO_MUJERES.forEach(producto => {
+            const BTN_CARRITO = document.createElement('a')
+            BTN_CARRITO.className = 'btn btn-look';
+            BTN_CARRITO.innerHTML = `<i class="bi bi-cart-plus"></i>`
+            
+            BTN_CARRITO.addEventListener('click', () => {
+                //Función para el boton de añadir al carrito
+                let carrito = JSON.parse(localStorage.getItem('aver')) || [];
+                const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto}
+                carrito.push(ARRAY_PRODUCTO_CARRITO)
+                localStorage.setItem('aver', JSON.stringify(carrito))
+                alert("Artículo añadido al carrito")})
+
             const CARD_H = document.createElement('div');
             CARD_H.className = 'card card-look';
             CARD_H.innerHTML = `
@@ -32,19 +44,10 @@ function renderizarProductos() {
             <h5 class="card-title">${producto.nombre}</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">$${producto.precio}</h6>
             <p class="card-text">${producto.descripcion}</p>
-            <a href="#" class="btn btn-look">COMPRAR AHORA</a>
+            <a href="#" class="btn btn-look comprar-btn">COMPRAR AHORA</a>
             </div>`;
-            const BTN_CARRITO = document.createElement('a')
-            BTN_CARRITO.className = 'btn btn-look';
-            BTN_CARRITO.innerHTML = `<i class="bi bi-cart-plus"></i>`
-            BTN_CARRITO.addEventListener('click', () => {
-                let carrito = JSON.parse(localStorage.getItem('aver')) || [];
-                const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto}
-                carrito.push(ARRAY_PRODUCTO_CARRITO)
-                localStorage.setItem('aver', JSON.stringify(carrito))
-                alert("Artículo añadido al carrito")
-            })
-            CARD_H.appendChild(BTN_CARRITO)
+            const CARD_BODY = CARD_H.querySelector('.card-body');
+            CARD_BODY.appendChild(BTN_CARRITO)
             DIV_HOMBRES.appendChild(CARD_H);
             })
         }

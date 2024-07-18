@@ -1,6 +1,6 @@
 .img-articulo{
-    height: 6.25rem;
-    width: 6.25rem;
+    height: 8.125rem;
+    width: 8.125rem;
     min-height: 6.25rem;
     min-width: 6.25rem;
     border: .125rem solid $color2;
@@ -14,11 +14,13 @@
     gap: .3125rem;
     font-size: 1rem;
     text-transform: uppercase;
+    font-family: $font2;
 }
 .info-carrito{
     display: flex;
     flex-direction: column;
     padding: 4px;
+    height: 8.125rem;
 }
 .precio-carrito{
     font-size: 1.4375rem;
@@ -27,4 +29,8 @@
 #total-carrito{
     margin: .3125rem;
     padding: .3125rem;
+}
+.btn-eliminar{
+    width: 100px;
+    height: 50px;
 }

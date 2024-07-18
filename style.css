@@ -10,7 +10,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Keila";
 }
 
 .barra-n {
@@ -82,6 +81,7 @@ footer {
 .card-look {
   border: solid 3px #F3C3B2;
   width: 18rem;
+  font-family: "Keila";
 }
 
 .btn-look {
@@ -225,8 +225,8 @@ input#user-name:focus, input#password:focus {
 }
 
 .img-articulo {
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 8.125rem;
+  width: 8.125rem;
   min-height: 6.25rem;
   min-width: 6.25rem;
   border: 0.125rem solid #F3C3B2;
@@ -241,12 +241,14 @@ input#user-name:focus, input#password:focus {
   gap: 0.3125rem;
   font-size: 1rem;
   text-transform: uppercase;
+  font-family: "Keila";
 }
 
 .info-carrito {
   display: flex;
   flex-direction: column;
   padding: 4px;
+  height: 8.125rem;
 }
 
 .precio-carrito {
@@ -257,6 +259,11 @@ input#user-name:focus, input#password:focus {
 #total-carrito {
   margin: 0.3125rem;
   padding: 0.3125rem;
+}
+
+.btn-eliminar {
+  width: 100px;
+  height: 50px;
 }
 
 @media only screen and (max-width: 575px) {
