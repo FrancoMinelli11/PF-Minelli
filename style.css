@@ -234,7 +234,7 @@ input#user-name:focus, input#password:focus {
 
 .div-carrito {
   width: 100%;
-  padding: 0.3125rem;
+  padding: 0 0.3125rem 1.25rem 0.3125rem;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -242,6 +242,19 @@ input#user-name:focus, input#password:focus {
   font-size: 1rem;
   text-transform: uppercase;
   font-family: "Keila";
+  position: relative;
+  margin-top: 20px;
+}
+
+.div-carrito::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Ubica el borde en la parte inferior del div */
+  left: 50%; /* Centra horizontalmente el borde */
+  width: 99%; /* Ajusta el ancho del borde según tus necesidades */
+  height: 2px; /* Ajusta el grosor del borde */
+  background-color: #F3C3B2; /* Color del borde */
+  transform: translateX(-50%); /* Centra el borde horizontalmente */
 }
 
 .info-carrito {
@@ -264,6 +277,37 @@ input#user-name:focus, input#password:focus {
 .btn-eliminar {
   width: 100px;
   height: 50px;
+}
+
+h1 {
+  font-family: "Luckiest Guy", cursive;
+}
+
+.h2-carrito {
+  white-space: pre;
+}
+
+#elementos:first-child {
+  border: 2px 0 0 0 solid red;
+  color: red;
+}
+
+.input-cantidad {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #F3C3B2;
+}
+
+.input-cantidad::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#div-cantidad button {
+  border: 2px solid #F3C3B2;
+  background-color: white;
+  height: 30px;
+  width: 30px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -365,6 +409,7 @@ input#user-name:focus, input#password:focus {
   height: 3.625rem;
   padding: 1px;
   background-color: white;
+  border-radius: 8px 0 0 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

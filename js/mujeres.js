@@ -34,7 +34,7 @@ function renderizarProductos() {
                 const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto}
                 carrito.push(ARRAY_PRODUCTO_CARRITO)
                 localStorage.setItem('aver', JSON.stringify(carrito))
-                alert("Artículo añadido al carrito")})
+                })
 
             const CARD_H = document.createElement('div');
             CARD_H.className = 'card card-look';
