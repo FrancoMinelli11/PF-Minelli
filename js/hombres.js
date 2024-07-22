@@ -32,11 +32,20 @@ function renderizarProductos() {
             BTN_CARRITO.addEventListener('click', () => {
                 //Función para el boton de añadir al carrito
                 let carrito = JSON.parse(localStorage.getItem('aver')) || [];
-                const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto}
+
+                const PRODUCTO_EXISTE = carrito.some(item => item.nombre === producto.nombre)
+                if(!PRODUCTO_EXISTE){
+                const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto,enCarrito:"si"}
                 carrito.push(ARRAY_PRODUCTO_CARRITO)
                 localStorage.setItem('aver', JSON.stringify(carrito))
-                })
-
+                    BTN_CARRITO.classList.add('deshabilitar')
+                BTN_CARRITO.innerHTML = `<i class="bi bi-cart-check"></i>`}
+                else{
+                BTN_CARRITO.classList.add('deshabilitar')
+                BTN_CARRITO.innerHTML = `<i class="bi bi-cart-check"></i>`
+                }
+            })
+            
             const CARD_H = document.createElement('div');
             CARD_H.className = 'card card-look';
             CARD_H.innerHTML = `
@@ -50,8 +59,9 @@ function renderizarProductos() {
             const CARD_BODY = CARD_H.querySelector('.card-body');
             CARD_BODY.appendChild(BTN_CARRITO)
             DIV_HOMBRES.appendChild(CARD_H);
-            })
-        }
+        })
     }
+}
+
 document.addEventListener('DOMContentLoaded', renderizarProductos);
 
