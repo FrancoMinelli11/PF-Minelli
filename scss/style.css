@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@0..45,79.8&family=Luckiest+Guy&display=swap");
-@font-face {
-  font-family: "Keila";
-  src: url(../Photographs.ttf) format(trueType);
-}
 /* Variables */
 /* Fin Variables */
 * {
@@ -17,7 +13,8 @@
   color: #CFD6C4;
   font-family: "Luckiest Guy", cursive;
 }
-.barra-n:hover {
+
+.barra-n :hover {
   color: #F3C3B2;
 }
 
@@ -48,8 +45,9 @@ footer {
   display: grid;
   grid-template-areas: "galeria1 galeria2" "galeria1 galeria2" "galeria1 galeria3" "galeria1 galeria3" "galeria1 galeria4";
   height: 50vh;
-  gap: 0.625rem;
-  padding: 0.625rem;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .galeria1 {
@@ -81,7 +79,6 @@ footer {
 .card-look {
   border: solid 3px #F3C3B2;
   width: 18rem;
-  font-family: "Keila";
 }
 
 .btn-look {
@@ -140,10 +137,34 @@ footer {
   color: #F3C3B2;
 }
 
-.comprar-btn {
-  letter-spacing: 2.5px;
+@media only screen and (max-width: 575px) {
+  .tamaño-img-cel {
+    height: 350px;
+    width: 350px;
+  }
+  .muestras-m2, .muestras-m3 {
+    background-position: initial;
+  }
 }
-
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template: "galeria1 galeria1 galeria2" 300px "galeria1 galeria1 galeria3" 300px "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
+    justify-content: center;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .imgh1 {
+    object-fit: cover;
+  }
+}
+@media only screen and (min-width: 956px) {
+  .novedades {
+    width: 717px !important;
+    font-size: 24px !important;
+    top: 66% !important;
+  }
+}
 .style-label {
   color: #657166;
 }
@@ -198,158 +219,28 @@ footer {
 }
 
 .main-inicio-sesion {
-  background-color: #CFD6C4;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #CFD6C4; /* Color de fondo */
+  height: 100vh; /* Altura del 100% del viewport */
+  display: flex; /* Flexbox para centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center; /* Alinear texto al centro */
 }
 
 .div-inicio-sesion {
-  align-content: center;
-  height: 60vh;
-  width: 60vw;
-  background-color: white;
-  border: 0.3125rem solid #F3C3B2;
-  border-radius: 0.4375rem;
+  background-color: white; /* Fondo blanco */
+  border: 0.3125rem solid #F3C3B2; /* Borde con color definido */
+  border-radius: 0.4375rem; /* Radio del borde */
+  padding: 2rem; /* Espaciado interno */
+  max-width: 30rem; /* Ancho máximo */
+  width: 90%; /* Ancho del 90% del contenedor padre */
 }
 
 .h1-registro {
-  font-size: large;
+  font-size: 1.5rem; /* Tamaño de fuente grande */
+  margin-bottom: 1rem; /* Margen inferior */
 }
 
-input#user-name:focus, input#password:focus {
-  border: 0.125rem solid #CFD6C4;
-  box-shadow: none;
-}
-
-.img-articulo {
-  height: 8.125rem;
-  width: 8.125rem;
-  min-height: 6.25rem;
-  min-width: 6.25rem;
-  border: 0.125rem solid #F3C3B2;
-}
-
-.div-carrito {
-  width: 100%;
-  padding: 0 0.3125rem 1.25rem 0.3125rem;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.3125rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-family: "Keila";
-  position: relative;
-  margin-top: 20px;
-}
-
-.div-carrito::after {
-  content: "";
-  position: absolute;
-  bottom: 0; /* Ubica el borde en la parte inferior del div */
-  left: 50%; /* Centra horizontalmente el borde */
-  width: 99%; /* Ajusta el ancho del borde según tus necesidades */
-  height: 2px; /* Ajusta el grosor del borde */
-  background-color: #F3C3B2; /* Color del borde */
-  transform: translateX(-50%); /* Centra el borde horizontalmente */
-}
-
-.info-carrito {
-  display: flex;
-  flex-direction: column;
-  padding: 4px;
-  height: 8.125rem;
-}
-
-.precio-carrito {
-  font-size: 1.4375rem;
-  opacity: 0.5;
-}
-
-#total-carrito {
-  margin: 0.3125rem;
-  padding: 0.3125rem;
-}
-
-.btn-eliminar {
-  width: 100px;
-  height: 50px;
-}
-
-h1 {
-  font-family: "Luckiest Guy", cursive;
-}
-
-.h2-carrito {
-  white-space: pre;
-}
-
-#elementos:first-child {
-  border: 2px 0 0 0 solid red;
-  color: red;
-}
-
-.input-cantidad {
-  text-align: center;
-  height: 30px;
-  width: 30px;
-  border: 2px solid #F3C3B2;
-}
-
-.input-cantidad::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-#div-cantidad button {
-  border: 2px solid #F3C3B2;
-  background-color: white;
-  height: 30px;
-  width: 30px;
-}
-
-.deshabilitar {
-  pointer-events: none;
-  content: "Artículo añadido al carrito";
-}
-
-@media only screen and (max-width: 575px) {
-  .tamaño-img-cel {
-    height: 350px;
-    width: 350px;
-  }
-  .muestras-m2, .muestras-m3 {
-    background-position: initial;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .galeria {
-    grid-template: "galeria1 galeria1 galeria2" 300px "galeria1 galeria1 galeria3" 300px "galeria1 galeria1 galeria4" 150px/300px 300px 300px;
-    justify-content: center;
-    height: auto;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .imgh1 {
-    object-fit: cover;
-  }
-}
-@media only screen and (min-width: 956px) {
-  .novedades {
-    width: 717px !important;
-    font-size: 24px !important;
-    top: 66% !important;
-  }
-}
-@media only screen and (max-width: 464px) {
-  .div-inicio-sesion {
-    width: 80vw;
-    height: 80vh;
-    font-size: small;
-  }
-}
 .imgh {
   height: 700px;
   background-position: center;
@@ -397,6 +288,10 @@ h1 {
   background-size: cover;
 }
 
+.imginfo1 {
+  background-image: url(Assets/WhatsApp\ Image\ 2024-04-24\ at\ 14.02.42.jpeg);
+}
+
 .bg-person {
   background-color: #586d5a;
   color: #CFD6C4;
@@ -406,11 +301,23 @@ h1 {
   color: #F3C3B2;
 }
 
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #657166;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F3C3B2;
+  border: 2px solid #657166;
+}
+
 .boton-img-h {
   height: 3.625rem;
   padding: 1px;
   background-color: white;
-  border-radius: 8px 0 0 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

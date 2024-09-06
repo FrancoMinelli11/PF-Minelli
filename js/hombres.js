@@ -35,6 +35,8 @@ function renderizarProductos() {
 
                 const PRODUCTO_EXISTE = carrito.some(item => item.nombre === producto.nombre)
                 if(!PRODUCTO_EXISTE){
+                    
+                    
                 const ARRAY_PRODUCTO_CARRITO = {nombre: producto.nombre, precio: producto.precio, foto:producto.foto,enCarrito:"si"}
                 carrito.push(ARRAY_PRODUCTO_CARRITO)
                 localStorage.setItem('aver', JSON.stringify(carrito))
